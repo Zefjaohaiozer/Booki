@@ -1,11 +1,204 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<!--  ici toutes les informations pour le navigateur -->
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Booki</title>
+    <script src="https://kit.fontawesome.com/e1a783ce50.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">    
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/desktop.css" rel="stylesheet">
+    
+
+
 </head>
+
+<!-- ici le contenu de la page -->
 <body>
 
+<!-- squelette de la homepage -->
+        <nav class="nav">
+           <a href="#hosting" class="navLink"><p>Hébergement</p></a>
+           <a href="#activities" class="navLink" ><p>Activités</p></a>
+        </nav>
+
+        <section class="search">
+            <h2 class="h2">
+                Trouvez votre hébergement pour des vacances de rêve
+            </h2>
+            <p>
+                En plein centre-ville ou en pleine nature
+            </p>
+           
+            <form action="/action_page.php">
+                <input type="text" id="searchForm" value="Trouver un hébergement"> <input type="submit" value="Rechercher ! ">
+            </form> 
+        </section>
+        <section class="filters">
+            <h3 class="h3">Filtres</h3>
+                <button class="filterButton">
+                    <p>
+                        <i class="fa-solid fa-money-bill-1-wave"></i> Economique
+                    </p>
+                </button> 
+                
+                <button class="filterButton">
+                    
+                    <p>
+                        <i class="fa-solid fa-person"></i> Familial
+                    </p>
+                </button>
+                <button class="filterButton">
+                    
+                    <p>
+                        <i class="fa-solid fa-heart"></i> Romantique
+                    </p>
+                </button>
+                <button class="filterButton">
+                    <p>
+                        <i class="fa-solid fa-dog"></i> Animaux Autorisés
+                    </p>
+                </button>
+
+            </div>
+        </section>
+        <section class="hosting">
+            <h2 class="h2">
+                Hébergements à Marseille
+            </h2>
+            <div class="hostingFlexBox">
+            
+            <br>
+            <a href="#" class="clickCard"><div class="hostingPreview">
+                
+                    <img src="styles/hebergements/4_small/canebiereSmall.jpg" alt="Image de lits superposés avec une fenêtre donnant sur une avenue emblématique de Marseille : la Canebière" class="hostingImg">
+                    <h3>
+                        Auberge la Canebière
+                    </h3>
+                    <p>
+                    Nuit  partir de 25€
+                    </p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                
+            </div>
+            </a>
+            <a href="#" class="clickCard"><div class="hostingPreview">
+                <img src="styles/hebergements/4_small/port.jpg" alt="Image d'une chambre aux tons bleus et gris, présentant 2 lits simples." class="hostingImg">
+                <h3>
+                    Hôtel du port
+                </h3>
+                <p>
+                   Nuit  partir de 52€
+                </p>
+                <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+            </div>
+            </a>    
+            <a href="#" class="clickCard">
+                <div class="hostingPreview">
+                    <img src="styles/hebergements/4_small/mouettes.jpg" alt="Image d'une chambre avec un grand placard de rangement disposant d'un miroir." class="hostingImg">
+                    <h3>
+                        Hôtel Les Mouettes
+                    </h3>
+                    <p>
+                    Nuit  partir de 76€
+                    </p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                </div>
+            </a>
+            <a href="#" class="clickCard">
+                <div class="hostingPreview">
+                    <img src="styles/hebergements/4_small/mer.jpg" alt="Image d'un lit double et d'un tableau présentant des vagues s'écrasant sur un îlot." class="hostingImg">
+                    <h3>
+                        Hôtel de la Mer
+                    </h3>
+                    <p>
+                    Nuit  partir de 46€
+                    </p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                </div>
+            </a>
+            <a href="#" class="clickCard">
+                <div class="hostingPreview">
+                    <img src="styles/hebergements/4_small/panier.jpg" alt="Image de lits superposés en bois sombre avec une ambiance rustique" class="hostingImg">
+                    <h3>
+                        Auberge le Panier
+                    </h3>
+                    <p>
+                    Nuit  partir de 23€
+                    </p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                </div>
+            </a>
+            <a href="#" class="clickCard">
+                <div class="hostingPreview">
+                    <img src="styles/hebergements/4_small/amina.jpg" alt="image d'une chambre lumineuse avec un bureau et un téléviseur." class="hostingImg">
+                    <h3>
+                        Hôtel Chez Amina
+                    </h3>
+                    <p>
+                    Nuit  partir de 96€
+                    </p>
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                </div>
+            </a>
+        </div>
+            
+        </section>
+
+        <section class="popular">
+            <h2 class="h2">
+                Les plus populaires
+            </h2>
+        </section>
+
+        <section class="activities" id="activities">
+            <h2 class="h2">
+                Activités à Marseille
+            </h2>
+        </section>
+
+
+
+    <footer class="footerClass">
+        
+        <li class="footerList">
+            <ul><h3>à Propos</h3></ul>
+            <ul>
+                <a href="#" class="footerLink">Fonctionnement du site</a>
+            </ul>
+            <ul>
+                <a href="#" class="footerLink">Conditions Générales</a>
+            </ul>
+            <ul>
+                <a href="#" class="footerLink">Données et confidentialité</a>
+            </ul>
+        </li>
+        <li class="footerList">
+            <ul><h3>Nos hébergements</h3></ul>
+            <ul>
+                <a href="#" class="footerLink">Charte Qualité</a>
+            </ul>
+            <ul>
+                <a href="#" class="footerLink">Proposer votre hôtel</a>
+            </ul>
+          
+        </li>
+        <li class="footerList">
+            <ul><h3>Assistance</h3></ul>
+            <ul>
+                <a href="#" class="footerLink">Centre d'aide</a>
+            </ul>
+            <ul>
+                <a href="#" class="footerLink">Nous contacter</a>
+            </ul>
+        </li>
+        
+
+    </footer>
 </body>
 </html>
+
+<!-- <i class="fa-solid fa-star-sharp-half-stroke"></i> (demi-étoile si besoin plus tard) -->
