@@ -1,100 +1,272 @@
-﻿body
-{
-   
+﻿/* Style général */
+body{
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
- 
+    padding: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+.h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+p{
+    font-size: medium;
+    }
+/* Navigation / header */
+header{
+    
+}
+.logo{
+    height: 20px;
+    margin: 25px;
 }
 .nav{
-    position: relative;
-    display: inline-flex;
-    flex-direction: row-reverse;
+    float: right;
+   display: inline-flex;
    }
 .navLink{
     margin: 5px;
 }
-.fa-solid{
+
+/* style des rankings font awesome */
+.ranking{
+    color: #0065FC;
+    position: absolute;
+    bottom: 0;
+}
+
+/* Partie "Recherche" */
+.searchAndFilter{
+    margin: 25px;
+    margin-top: 0px;
+}
+.researchForm{
+    display: inline-flex;
+    width: 300px;
+}
+.searchButton{
+    border-style: none;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color:white;
+    font-size: 700;
+    font-weight: bold;
+    padding:20px;
+}
+.searchButton:hover{
+    cursor: pointer;
+    background-color:#DEEBFF;
     color: #0065FC;
 }
-.fa-regular{
-    color: #0065FC;
+
+.searchText{
+    border-style: solid;
+    border-color: #F2F2F2;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+
+    }
+.searchLocationDiv{
+    width: 50px;
+    text-align: center;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    padding: auto;
 }
-section{
-    margin: 10px;
+.searchLocationDiv:hover{
+    cursor: pointer;
 }
+
+.searchLocationPin{
+    width: 50px;
+}
+
+/* Filtres */
 .filters{
     display: inline-flex;
     text-align: center;
-    padding: auto;
-    
-}
+    width: 950px;
+    margin: 25px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+ }
 .filterButton{
-    margin-right: 20px;
-    margin-left: 20px;
+    margin:auto;
     background-color: white;
     border-style: solid;
     border-radius: 25px;
-    padding: auto;
-    font-weight: bold;
-    min-width: 150px;
+    
+    font-weight: 700;
+    min-width: 200px;
 
 }
 
-.h3{
-    font-weight: bold;
+.filterButton:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
 }
+.filterFA{
+    color: #0065FC;
+}
+
+/* Sections côte à côte */
+.sideSections{
+    display: inline-flex;
+    
+}
+.sideCard{
+    margin: 25px;
+}
+/* Hosting */
+
 .hosting{
+    width: 70%;
     background-color: #F2F2F2;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 20px;
+    min-height: 625px;
    }
-.clickCard{
+.clickCardHosting{
     margin: auto;
-    text-decoration: none;
+
 }
 .hostingPreview{
-        width: 400px;
+        width: 260px;
+        height: 230px;
+        position: relative;
         background-color: white;
-        border-radius: 30px;
-        padding: 10px;
-        margin: 1%;    
-        
+        border-radius: 20px;
+        padding: 5px;
+        margin: 1%;  
+        margin-bottom: 10px; 
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+  
     }
 
 .hostingImg{
         width: 100%;
-        height: 200px;
-        object-position: left top;
-        border-radius: 30px 30px 0px 0px;
+        height: 124px;
+        object-position: center;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
     }
 .hostingFlexBox{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+.showMore{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+}
 
+/* Populaire */
 .popular{
     background-color: #F2F2F2;
+    width: 25%;
+    min-height: 625px;
+    border-radius: 20px;
+    padding:15px;
+
 }
+.popularImg{
+    width: 137px ;
+    height: 145px;
+    object-position: center;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+.popularPreview{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin: auto;
+    margin-top: 25px;
+    }
+.clickCardPopular{
+    display: flex; 
+    
+}
+.popularTexts{
+    margin-left: 10px;
+    height: 150px;
+    position: relative;
+}
+
+/* Activités */
+.activitiesImg{
+    width: 300px;
+    height: 420px;
+    object-position: center;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+   
+}
+.activitiesFlexBox{
+    display: inline-flex;
+    
+    flex-wrap: wrap;
+    width: 100%;
+    }
+.activitiesPreview{
+    background-color: white;
+    border-radius: 30px;
+      
+}
+.clickCardActivities{
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+    height: 470px;
+    box-shadow: -2px 37px 17px -2px #F2F2F2;
+    padding-bottom: 15px;
+    text-align: left;
+}
+.activitiesTitle{
+    margin-left: 20px;
+}
+
+/* Footer */
 .footerClass{
     background-color: #F2F2F2;
-    display: flex;
-    flex-direction: row;
-     
+    display: inline-flex;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 40px;
+    margin-bottom:0px ;
+    height: 225px;
+    position: relative;
+   
 }
-.filters{
-    display: flex;
-    flex-direction: row; 
-    }
-
-.filterButton:hover{
-    background-color: #F2F2F2;
-    cursor: pointer;
-    color: #0065FC;
+.footerList{
+    margin: auto;
+    margin-left: 20px;
+    list-style: none;
+    text-align: left;
+    height: 180px;
 }
-
-
-
-    
