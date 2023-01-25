@@ -7,11 +7,14 @@
     <title>Booki</title>
     <script src="https://kit.fontawesome.com/e1a783ce50.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">    
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/desktop.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/phone.css">
   
 
 
@@ -33,56 +36,56 @@
  <section class="searchAndFilter"> 
 <!-- Section recherche -->
         <div class="search">
-            <h2 class="h2">
+            <h1 class="h1">
                 Trouvez votre hébergement pour des vacances de rêve
-            </h2>
+            </h1>
             <p>
                 En plein centre-ville ou en pleine nature
             </p>
            
             <form action="#" class="researchForm">
-                <div class="searchLocationDiv">
-                    <p class="searchLocationPin"><i class="fa-solid fa-location-pin"></i></p>
-                </div>
+               
+                <button class="searchLocationDiv" type="submit"><i class="fa-solid fa-location-pin searchLocationPin"></i></button>
                 <input type="text" class="searchText" value="Marseille, France">
-                <input class="searchButton" type="submit" value="Rechercher">
+                <button class="searchButton textSearchButton" type="submit"><p>Rechercher</p></button>
+                <button class="searchButton searchButtonFA" type="submit"><i class="fa-solid fa-magnifying-glass searchButtonIcon"></i></button>
+                
+                
             </form> 
             
         </div>
 
 <!-- Filtres -->
         <div class="filters">
-            <h3 class="h3">Filtres</h3>
+            <h3 class="h3 filterTitle">Filtres</h3>
                 <button class="filterButton">
-                    <p>
+                   
                         <i class="fa-solid fa-money-bill-1-wave filterFA"></i> Economique
-                    </p>
+                   
                 </button> 
                 
                 <button class="filterButton">
                     
-                    <p>
                         <i class="fa-solid fa-person filterFA"></i> Familial
-                    </p>
+  
                 </button>
                 <button class="filterButton">
                     
-                    <p>
+                    
                         <i class="fa-solid fa-heart filterFA"></i> Romantique
-                    </p>
+                    
                 </button>
                 <button class="filterButton">
-                    <p>
-                        <i class="fa-solid fa-dog filterFA"></i> Animaux Autorisés
-                    </p>
+                    <i class="fa-solid fa-dog filterFA"></i> Animaux Autorisés
+                  
                 </button>
 
           
             </div>
 
-        <p><i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        <p><i class="fa-solid fa-circle-info infoFA"></i> Plus de 500 logements sont disponibles dans cette ville</p>
     </section>  
-<!-- mise en place d'une Div spécifique pour aligner les 2 blocs "Hébergement" et "Populaires" -->
+<!-- mise en place d'une Div spécifique pour aligner les 2 blocs "Hébergement" et "Populaires" et ensuite les inverser simplement en mode mobile -->
     <section class="sideSections">
 <!-- Section hébergement -->
         <div class="hosting sideCard" id="hosting">
@@ -100,7 +103,7 @@
                         Auberge la Canebière
                     </h3>
                     <p>
-                    Nuit  partir de 25€
+                    Nuit à partir de 25€
                     </p>
                     <p class="ranking"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                 
@@ -113,7 +116,7 @@
                         Hôtel du port
                     </h3>
                     <p>
-                    Nuit  partir de 52€
+                    Nuit à partir de 52€
                     </p>
                     <p class="ranking"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                 </div>
@@ -125,7 +128,7 @@
                         Hôtel Les Mouettes
                     </h3>
                     <p>
-                    Nuit  partir de 76€
+                    Nuit à partir de 76€
                     </p>
                     <p class="ranking"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                 </div>
@@ -137,7 +140,7 @@
                         Hôtel de la Mer
                     </h3>
                     <p>
-                    Nuit  partir de 46€
+                    Nuit à partir de 46€
                     </p>
                     <p class="ranking"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                 </div>
@@ -149,7 +152,7 @@
                         Auberge le Panier
                     </h3>
                     <p>
-                    Nuit  partir de 23€
+                    Nuit à partir de 23€
                     </p>
                     <p class="ranking"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                 </div>
@@ -161,7 +164,7 @@
                         Hôtel Chez Amina
                     </h3>
                     <p>
-                    Nuit  partir de 96€
+                    Nuit à partir de 96€
                     </p>
                     <p class="ranking"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
                 </div>
@@ -171,15 +174,20 @@
     </div>
 <!-- Section Populaire -->
         <div class="popular sideCard">
-            <h2 class="h2">
-                Les plus populaires
+            <div class="popularTitleAndIcon">
+            <h2 class="h2 popularH2">
+                Les plus populaires 
             </h2>
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            
+            
+        </div>
             <div class="popularFlexBox">
                 <div class="popularPreview">
                 <a href="#" class="clickCardPopular">
                     
                     
-                        <img src="styles/hebergements/4_small/soleil.jpg" alt="Chambre aux mures vers dans un style traditionnel, avec un lit double" class="popularImg">
+                        <img src="styles/hebergements/4_small/soleil.jpg" alt="Chambre aux murs verts dans un style traditionnel, avec un lit double" class="popularImg">
                         <div class="popularTexts">
                         <h3>
                             Hôtel le Soleil du Matin
@@ -224,7 +232,7 @@
                     </div>
                 </a>
                 </div>
-            </div>
+        </div>
 
     </section>
 <!-- Section Activités -->
@@ -274,37 +282,40 @@
 <!-- Footer -->
     <footer class="footerClass">
         
-        <li class="footerList">
-            <ul><h3>à Propos</h3></ul>
-            <ul>
+        <ul class="footerList">
+            <li><h3>à Propos</h3>
+            </li>
+            <li class="listItem">
                 <a href="#" class="footerLink">Fonctionnement du site</a>
-            </ul>
-            <ul>
+            </li>
+            <li class="listItem">
                 <a href="#" class="footerLink">Conditions Générales</a>
-            </ul>
-            <ul>
+            </li>
+            <li class="listItem">
                 <a href="#" class="footerLink">Données et confidentialité</a>
-            </ul>
-        </li>
-        <li class="footerList">
-            <ul><h3>Nos hébergements</h3></ul>
-            <ul>
+            </li>
+        </ul>
+        <ul class="footerList">
+            <li><h3>Nos hébergements</h3>
+            </li>
+            <li class="listItem">
                 <a href="#" class="footerLink">Charte Qualité</a>
-            </ul>
-            <ul>
+            </li>
+            <li class="listItem">
                 <a href="#" class="footerLink">Proposer votre hôtel</a>
-            </ul>
+            </li>
           
-        </li>
-        <li class="footerList">
-            <ul><h3>Assistance</h3></ul>
-            <ul>
+        </ul>
+        <ul class="footerList">
+            <li><h3>Assistance</h3>
+            </li>
+            <li class="listItem">
                 <a href="#" class="footerLink">Centre d'aide</a>
-            </ul>
-            <ul>
+            </li>
+            <li class="listItem">
                 <a href="#" class="footerLink">Nous contacter</a>
-            </ul>
-        </li>
+            </li>
+        </ul>
         
 
     </footer>

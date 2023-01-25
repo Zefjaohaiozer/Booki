@@ -1,0 +1,53 @@
+@media screen and (max-width: 992px) {
+    
+    /* (en cas de passage du mode phone au mode tablette) */
+    .searchButtonFA{
+        display: none;
+    }
+    
+    .filters{
+        width: 100%;
+    }
+    .filterButton{
+        margin: auto;
+        width: 20%;
+
+    }
+
+
+    .sideSections{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hosting{
+        width: 100%;
+    }
+    
+    .popular{
+        width: 100%;
+        height: 280px;
+        min-height: 280px;
+    }
+    .popularFlexBox{
+        width: 100%;
+        display: flex;
+    }
+    .popularDeckCards{
+      
+        flex-direction: row;
+    }
+    .popularPreview{
+        width: 25%;
+        margin: auto;
+    }
+    .clickCardActivities{
+        height: 280px ;
+    }
+    .activitiesImg{
+        height: 220px;
+    }
+    .activitiesTitle{
+        margin:10px
+    }
+
+}

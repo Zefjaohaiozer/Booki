@@ -1,0 +1,221 @@
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-color: #F2F2F2;
+    }
+
+    /* modification de la navigation et du logo */
+    header {
+        background-color: white;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .nav {
+        display: flex;
+        margin: 0px;
+        width: 100%;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 0px 0px 0px 0px;
+        margin: 0px;
+        margin-left: 0px;
+
+    }
+
+    .navLink {
+        border-bottom: solid;
+        border-color: #F2F2F2;
+        width: 50%;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .navLink:focus {
+        border-color: #0065FC;
+        color: #0065FC;
+    }
+
+    /* modifications sur la section recherches  */
+    .search {
+        width: 100%;
+    }
+
+    .searchAndFilter {
+        background-color: white;
+        border-radius: 0px 0px 0px 0px;
+        width: 100%;
+        margin: 0px;
+        padding-left: 20px;
+    }
+
+    .researchForm {
+        height: 50px;
+        width: 90%;
+    }
+
+    .searchLocationDiv {
+        width: 10%;
+    }
+
+    .searchLocationPin {
+        margin: auto;
+    }
+
+    .searchText {
+        width: 80%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    /* on affiche la loupe à la place du texte dans la barre de recherche */
+    .searchButtonFA {
+        display: inherit;
+        width: 10%;
+        text-align: center;
+    }
+
+    .searchButtonIcon {
+        margin: auto;
+    }
+
+    .textSearchButton {
+        display: none;
+    }
+
+    /* modification des filtres pour version mobile */
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .filterTitle {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .filterButton {
+        width: 45%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+/* Modification de l'ordre d'affichage Populaire et Hébergement + modification de leur design */
+    .sideSections {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .popular {
+        height: auto;
+        width: 90%;
+        min-width: none;
+        margin-left: 20px;
+    }
+
+    .popularFlexBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .popularPreview {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .popularImg {
+        width: 40%;
+    }
+
+    .hosting {
+        height: auto;
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+
+    .hostingFlexBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hostingImg {
+        height: 130px;
+    }
+
+    .clickCardHosting {
+        width: 100%;
+    }
+
+    .hostingPreview {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* le lien pour afficher plus disparaît sur Mobile */
+    .showMore {
+        display: none;
+    }
+
+    /* modification des activités */
+    .activities {
+        width: 100%;
+        height: auto;
+    }
+
+    .activitiesImg {
+        width: 100%;
+        height: 160px;
+
+    }
+
+    .activitiesFlexbox {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clickCardActivities {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .activitiesPreview {
+        width: 100%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 220px;
+        margin-left: 20px;
+    }
+
+    .clickCardActivities:hover {
+        box-shadow: none;
+    }
+
+    /* modification du footer */
+    .footerClass {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+}
