@@ -1,15 +1,39 @@
 @media screen and (max-width: 768px) {
+    *{
+        box-sizing: content-box;
+    }
+    
     body {
         padding: 0px;
         margin: 0px;
+        margin: auto;
         background-color: #F2F2F2;
+        overflow-x: hidden;
+        width: 100%;
+        min-width: 100%;
     }
-
+    
     /* modification de la navigation et du logo */
     header {
         background-color: white;
         border-radius: 0px 0px 0px 0px;
+        width: 100%;
     }
+    .h1{
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+    .intro{
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+    }
+
 
     .logo {
         display: flex;
@@ -53,16 +77,19 @@
         border-radius: 0px 0px 0px 0px;
         width: 100%;
         margin: 0px;
-        padding-left: 20px;
+        
+        padding: 0px;
+        
     }
 
     .researchForm {
         height: 50px;
         width: 90%;
+        margin: auto;
     }
 
     .searchLocationDiv {
-        width: 10%;
+        width: 15%;
     }
 
     .searchLocationPin {
@@ -70,7 +97,7 @@
     }
 
     .searchText {
-        width: 80%;
+        width: 75%;
         text-align: left;
         padding-left: 20px;
     }
@@ -95,7 +122,8 @@
     .filters {
         display: flex;
         flex-wrap: wrap;
-        width: 90%;
+        width: 100%;
+        margin: auto;
     }
 
     .filterTitle {
@@ -105,23 +133,36 @@
     }
 
     .filterButton {
-        width: 45%;
+        min-width: 0px;
+        width: 37%;
         margin: auto;
         margin-top: 15px;
     }
 
+    .logementsDispo{
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 /* Modification de l'ordre d'affichage Populaire et Hébergement + modification de leur design */
     .sideSections {
         display: flex;
         flex-direction: column-reverse;
-        width: 100%;
+        width: 90%;
+        margin: 0px;
+        
     }
 
     .popular {
         height: auto;
-        width: 90%;
+        width: 100%;
         min-width: none;
-        margin-left: 20px;
+        margin:none;
+    }
+    .sideCard{
+        margin: 0px;
+        min-width: none;
     }
 
     .popularFlexBox {
@@ -138,12 +179,13 @@
 
     .popularImg {
         width: 40%;
+        min-width: 40%;
     }
 
     .hosting {
         height: auto;
-        width: 90%;
-        margin-left: 20px;
+        width: 100%;
+        min-width: 0px;
         
     }
 
@@ -155,6 +197,7 @@
 
     .hostingImg {
         height: 130px;
+        width: 100%;
     }
 
     .clickCardHosting {
@@ -177,6 +220,8 @@
     .activities {
         width: 100%;
         height: auto;
+        
+        
     }
 
     .activitiesImg {
@@ -192,17 +237,18 @@
     }
 
     .clickCardActivities {
-        width: 90%;
-        margin-left: 20px;
+        width: 100%;
+       
     }
 
     .activitiesPreview {
-        width: 100%;
+        width: 90%;
         margin: auto;
+        
         margin-top: 10px;
         margin-bottom: 10px;
         height: 220px;
-        margin-left: 20px;
+        
     }
 
     .clickCardActivities:hover {
@@ -216,6 +262,7 @@
         width: 100%;
         padding-bottom: 30px;
         height: auto;
+        margin: 0px;
     }
 
 }
