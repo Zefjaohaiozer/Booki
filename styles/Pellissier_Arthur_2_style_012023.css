@@ -1,339 +1,367 @@
 ﻿/* Style général */
 
-
-body{
-    
+body {
     margin: auto;
+   
     padding: 0px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-   
     overflow-x: hidden;
-    
-    width: 100%;
+    width: 96%;
     max-width: 1400px;
-   
+    
 }
 
-a{
+a {
     text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
-.h2{
-    margin-left: 25px;
+.h1 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
 }
-.h3{
+
+.h2 {
+    margin-left: 25px;
+    color: black;
+}
+.h3 {
     font-weight: 700;
     font-size: 16px;
-    
-    }
-p{
-    
-    }
+    color: black;
+}
+p {
+    color: black;
+}
 
 /* Navigation / header */
 
-.logo{
+header{
+    height: 75px;
+}
+.logo {
     height: 25px;
     margin: 25px;
 }
 
+
 /* Disposition de la navigation en haut à droite */
-.nav{
+
+.nav {
     float: right;
     display: inline-flex;
-   }
-
-.navLink{
-    margin: 5px;
+    block-size: fill;
+    box-sizing: content-box;
+    
 }
 
+.navText {
+  height: 100%;
+  padding: 10px;
+  margin-top: 0px;
+}
+
+.navText:hover {
+    color: #0065fc;
+    border-top-style: solid;
+    border-top-color: #0065fc;
+    
+}
+
+
 /* style des rankings font awesome et disposition en bas de chaque card*/
-.ranking{
-    color: #0065FC;
+.ranking {
     position: absolute;
     bottom: 0;
 }
 
 /* Partie "Recherche" */
-.searchAndFilter{
-    margin: 25px;
+.searchAndFilter {
     margin-top: 0px;
 }
-.researchForm{
+.researchForm {
     display: flex;
-    }
-.searchButton{
+    height: 50px;
+}
+.searchButton {
     border-style: none;
     border-radius: 0px 15px 15px 0px;
-    background-color: #0065FC;
-    color:white;
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 21px;
-    padding-left: 15px;
-    padding-right:15px;
+    background-color: #0065fc;
+    color: white;
 }
 
-.searchButton:hover{
+.searchButton:hover {
     cursor: pointer;
-    background-color:#DEEBFF;
-    color: #0065FC;
+    background-color: #deebff;
+    color: #0065fc;
 }
 
-.searchText{
+.searchText {
     border-style: solid;
-    border-color: #F2F2F2;
-    font-family: 'Raleway';
+    border-color: #f2f2f2;
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 1em;
     line-height: 21px;
     text-align: center;
-
-
-    }
-.searchLocationDiv{
+}
+.searchLocationDiv {
     width: 50px;
     text-align: center;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
     border: none;
 }
-.searchLocationDiv:hover{
-    cursor: pointer;
-    background-color:#DEEBFF;
+.textSearchButton {
+    color: white;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    align-items: center;
+    width: 135px;
     
 }
-
-.searchLocationPin{
-    text-align: center;
-    color: #0065FC;
+.searchLocationDiv:hover {
+    cursor: pointer;
+    background-color: #deebff;
 }
 
-.searchButtonFA{
+.searchLocationPin {
+    text-align: center;
+    color: #0065fc;
+}
+
+.searchButtonFA {
     display: none;
 }
 
 /* Filtres */
-.filters{
+.filters {
     display: inline-flex;
     text-align: center;
     width: 900px;
-    margin: 25px;
-    margin-left: 0px;
+    margin-top: 25px;
+
     display: flex;
     flex-direction: row;
-    
-
- }
-.filterButton{
-    margin-left:25px;
+}
+.filterButton {
+    margin-left: 25px;
     padding: 15px;
     background-color: white;
     border-style: solid;
     border-width: 3px;
-    border-color:#F2F2F2;
+    border-color: #f2f2f2;
     border-radius: 25px;
     font-weight: 700;
     min-width: 200px;
     width: auto;
 }
 
-.filterButton:hover{
-    background-color: #DEEBFF;
+.filterButton:hover {
+    background-color: #deebff;
     cursor: pointer;
 }
-.filterFA{
-    color: #0065FC;
+.filterFA {
+    color: #0065fc;
 }
 
-.infoFA{
-    color: #0065FC;
+.infoFA {
+    color: #0065fc;
 }
-
+.logementsDispoMobile{
+    display: none;
+}
 /* Sections côte à côte */
-.sideSections{
+.sideSections {
     display: inline-flex;
-    
+    width: 100%;
 }
-.sideCard{
-    margin: 25px;
+.sideCard {
+    margin: 20px;
 }
 /* Hosting */
 
-.hosting{
+.hosting {
     width: 65%;
-    background-color: #F2F2F2;
+    height: 100%;
+    background-color: #f2f2f2;
     border-radius: 20px;
     padding: 20px;
-    min-height: 625px;
-    min-width: 600px;
-   }
-.clickCardHosting{
-    margin: auto;
-   
+
+    min-width: 560px;
+    margin-left: 0px;
 }
-.hostingPreview{
-        width: 260px;
-        height: 230px;
-        position: relative;
-        background-color: white;
-        border-radius: 20px;
-        padding: 5px;
-        margin: 1%;  
-        margin-bottom: 10px; 
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-        box-shadow: -2px 17px 17px -2px #a8a8a8;
-    }
-.hostingPreview:hover{
+.clickCardHosting {
+    margin: auto;
+}
+.hostingPreview {
+    width: 260px;
+    height: 230px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 1%;
+    margin-bottom: 10px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    box-shadow: -2px 17px 17px -2px #a8a8a8;
+}
+.hostingPreview:hover {
     box-shadow: -2px 17px 17px -2px #626262;
 }
 
-.hostingImg{
-        width: 100%;
-        height: 124px;
-        border-radius: 20px 20px 0px 0px;
-        object-fit: cover;
-        object-position: center;
-    }
-.hostingFlexBox{
+.hostingImg {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    object-position: center;
+}
+.hostingFlexBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.showMore{
-    font-family: 'Raleway';
+.showMore {
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    
 }
 
 /* Populaire */
 
-
-.popular{
-    background-color: #F2F2F2;
+.popular {
+    background-color: #f2f2f2;
     width: 28%;
+    height: 100%;
+
     min-width: 300px;
-    min-height: 625px;
+    margin-right: 0px;
     border-radius: 20px;
-    padding:15px;
+    padding: 15px;
     position: relative;
     display: flex;
     flex-direction: column;
-       
+    block-size: auto;
 }
-.popularFlexBox{
+.popularFlexBox {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
-    
 }
-.fa-arrow-trend-up{
-    color: #0065FC;
+.fa-arrow-trend-up {
+    color: #0065fc;
     position: absolute;
     right: 30px;
-    top:40px;
+    top: 40px;
     font-size: x-large;
 }
-.popularImg{
+.popularImg {
     width: 100px;
     min-width: auto;
     height: 145px;
     object-position: center;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
-
 }
-.popularPreview{
+.popularPreview {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     box-shadow: -2px 17px 17px -2px #a8a8a8;
-    
+
     flex-wrap: wrap;
-    }
-.popularPreview:hover{
+}
+.popularPreview:hover {
     box-shadow: -2px 17px 17px -2px #626262;
 }
-.clickCardPopular{
-    display: flex; 
+.clickCardPopular {
+    display: flex;
 }
-.popularTexts{
+.popularTexts {
     margin-left: 10px;
-    
+
     position: relative;
 }
 
+.fa-star {
+    color: #0065fc;
+}
 
 /* Activités */
-.activitiesImg{
+.activitiesImg {
     width: 100%;
     height: 420px;
     object-position: center;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-   
 }
-.activitiesFlexBox{
+.activitiesFlexBox {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    }
-.activitiesPreview{
+}
+.activitiesPreview {
     background-color: white;
     border-radius: 30px;
-      
 }
-.clickCardActivities{
+.clickCardActivities {
     border-radius: 20px 20px 20px 20px;
     margin: auto;
     height: 470px;
-    box-shadow: -2px 17px 17px -2px #F2F2F2;
+    box-shadow: -2px 17px 17px -2px #f2f2f2;
     padding-bottom: 15px;
     text-align: left;
     width: 20%;
 }
-.clickCardActivities:hover{
+.clickCardActivities:hover {
     box-shadow: -2px 17px 17px -2px #626262;
 }
-.activitiesTitle{
+.activitiesTitle {
     margin-left: 20px;
 }
 
 /* Footer */
-.footerClass{
-    background-color: #F2F2F2;
+.footerClass {
+    background-color: #f2f2f2;
     display: inline-flex;
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 40px;
-    margin-bottom:0px ;
+    margin-bottom: 0px;
     height: 225px;
-    
-   
 }
-.footerList{
-    
+.footerList {
     padding-left: 0px;
     margin: auto;
     margin-left: 20px;
@@ -341,7 +369,13 @@ p{
     text-align: left;
     height: 180px;
 }
-.listItem{
+.listItem {
     margin-top: 20px;
 }
 
+@media screen and (min-width: 992px) {
+    body{
+       
+    }
+    
+}
