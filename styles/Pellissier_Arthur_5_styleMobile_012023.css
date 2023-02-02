@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     * {
         box-sizing: content-box;
     }
@@ -49,8 +49,6 @@
         margin: 0px;
         margin-left: 0px;
         justify-content: space-around;
-        
-       
     }
 
     .navText {
@@ -63,7 +61,6 @@
         padding: 0px;
         padding-bottom: 20px;
         padding-top: 20px;
-        
     }
 
     .navTextHosting {
@@ -75,8 +72,11 @@
     .search {
         width: 100%;
     }
-    .navLinkHosting:visited {
+    .navLinkHosting {
         color: #0065fc;
+    }
+    .navLinkHosting:visited {
+        color: inherit;
     }
     .searchAndFilter {
         background-color: white;
@@ -150,9 +150,6 @@
         line-height: 13px;
     }
 
-    .logementsDispo {
-        display: none;
-    }
     .logementsDispoMobile {
         display: inherit;
         width: 90%;
@@ -217,7 +214,7 @@
 
     .hostingPreview {
         width: auto;
-        
+
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -256,10 +253,6 @@
         margin-top: 10px;
         margin-bottom: 10px;
         height: 220px;
-    }
-
-    .clickCardActivities:hover {
-        box-shadow: none;
     }
 
     /* modification du footer */

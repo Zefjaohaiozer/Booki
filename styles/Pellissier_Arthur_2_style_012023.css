@@ -99,12 +99,6 @@ p {
     color: white;
 }
 
-.searchButton:hover {
-    cursor: pointer;
-    background-color: #deebff;
-    color: #0065fc;
-}
-
 .searchText {
     border-style: solid;
     border-color: #f2f2f2;
@@ -133,10 +127,6 @@ p {
     text-align: center;
     align-items: center;
     width: 140px;
-}
-.searchLocationDiv:hover {
-    cursor: pointer;
-    background-color: #deebff;
 }
 
 .searchLocationPin {
@@ -171,10 +161,6 @@ p {
     width: auto;
 }
 
-.filterButton:hover {
-    background-color: #deebff;
-    cursor: pointer;
-}
 .filterFA {
     color: #0065fc;
 }
@@ -236,9 +222,6 @@ p {
     font-size: 14px;
     line-height: 16px;
     box-shadow: -2px 17px 17px -2px #a8a8a8;
-}
-.hostingPreview:hover {
-    box-shadow: -2px 17px 17px -2px #626262;
 }
 
 .hostingImg {
@@ -313,9 +296,7 @@ p {
 
     flex-wrap: wrap;
 }
-.popularPreview:hover {
-    box-shadow: -2px 17px 17px -2px #626262;
-}
+
 .clickCardPopular {
     display: flex;
 }
@@ -352,9 +333,7 @@ p {
     text-align: left;
     width: 20%;
 }
-.clickCardActivities:hover {
-    box-shadow: -2px 17px 17px -2px #626262;
-}
+
 .activitiesTitle {
     margin-left: 20px;
     font-family: "Raleway";
