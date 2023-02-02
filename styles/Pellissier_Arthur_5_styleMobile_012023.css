@@ -48,6 +48,9 @@
         border-radius: 0px 0px 0px 0px;
         margin: 0px;
         margin-left: 0px;
+        justify-content: space-around;
+        
+       
     }
 
     .navText {
@@ -56,6 +59,11 @@
         width: 50%;
         text-align: center;
         margin: 0px;
+        min-width: 0px;
+        padding: 0px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
     }
 
     .navTextHosting {
@@ -166,6 +174,7 @@
     }
     .sideCard {
         margin: 0px;
+        min-width: 0px;
     }
 
     .popularFlexBox {
@@ -207,8 +216,8 @@
     }
 
     .hostingPreview {
-        width: 100%;
-        margin: auto;
+        width: auto;
+        
         margin-top: 10px;
         margin-bottom: 10px;
     }
