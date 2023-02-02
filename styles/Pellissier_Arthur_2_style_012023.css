@@ -2,7 +2,6 @@
 
 body {
     margin: auto;
-   
     padding: 0px;
     font-family: "Raleway", sans-serif;
     display: flex;
@@ -11,7 +10,6 @@ body {
     overflow-x: hidden;
     width: 96%;
     max-width: 1400px;
-    
 }
 
 a {
@@ -20,7 +18,7 @@ a {
 }
 a:visited {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 .h1 {
@@ -34,55 +32,56 @@ a:visited {
 .h2 {
     margin-left: 25px;
     color: black;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
 }
 .h3 {
-    font-weight: 700;
-    font-size: 16px;
+    font-family: "Raleway";
     color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
 }
+
 p {
     color: black;
 }
 
 /* Navigation / header */
 
-header{
-    height: 75px;
-}
 .logo {
     height: 25px;
     margin: 25px;
 }
-
 
 /* Disposition de la navigation en haut à droite */
 
 .nav {
     float: right;
     display: inline-flex;
-    block-size: fill;
-    box-sizing: content-box;
-    
 }
 
 .navText {
-  height: 100%;
-  padding: 10px;
-  margin-top: 0px;
+    padding: 40px;
+    margin-top: 0px;
 }
-
-.navText:hover {
-    color: #0065fc;
-    border-top-style: solid;
-    border-top-color: #0065fc;
-    
-}
-
 
 /* style des rankings font awesome et disposition en bas de chaque card*/
 .ranking {
     position: absolute;
     bottom: 0;
+}
+.rankingOne {
+    color: #0065fc;
+}
+
+.rankingZero {
+    color: #f2f2f2;
 }
 
 /* Partie "Recherche" */
@@ -114,7 +113,8 @@ header{
     font-weight: 700;
     font-size: 1em;
     line-height: 21px;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 .searchLocationDiv {
     width: 50px;
@@ -132,8 +132,7 @@ header{
     line-height: 21px;
     text-align: center;
     align-items: center;
-    width: 135px;
-    
+    width: 140px;
 }
 .searchLocationDiv:hover {
     cursor: pointer;
@@ -142,7 +141,7 @@ header{
 
 .searchLocationPin {
     text-align: center;
-    color: #0065fc;
+    color: black;
 }
 
 .searchButtonFA {
@@ -182,9 +181,24 @@ header{
 
 .infoFA {
     color: #0065fc;
+    width: 25px;
+    height: 21px;
+    margin-right: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4px;
 }
-.logementsDispoMobile{
+.logementsDispoMobile {
     display: none;
+}
+
+.logementsDispoFlexbox {
+    width: 100%;
+    display: inline-flex;
 }
 /* Sections côte à côte */
 .sideSections {
@@ -206,9 +220,7 @@ header{
     min-width: 560px;
     margin-left: 0px;
 }
-.clickCardHosting {
-    margin: auto;
-}
+
 .hostingPreview {
     width: 260px;
     height: 230px;
@@ -277,7 +289,7 @@ header{
     color: #0065fc;
     position: absolute;
     right: 30px;
-    top: 40px;
+    top: 30px;
     font-size: x-large;
 }
 .popularImg {
@@ -313,10 +325,6 @@ header{
     position: relative;
 }
 
-.fa-star {
-    color: #0065fc;
-}
-
 /* Activités */
 .activitiesImg {
     width: 100%;
@@ -329,6 +337,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
 }
 .activitiesPreview {
@@ -337,7 +346,6 @@ header{
 }
 .clickCardActivities {
     border-radius: 20px 20px 20px 20px;
-    margin: auto;
     height: 470px;
     box-shadow: -2px 17px 17px -2px #f2f2f2;
     padding-bottom: 15px;
@@ -349,33 +357,29 @@ header{
 }
 .activitiesTitle {
     margin-left: 20px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 /* Footer */
 .footerClass {
     background-color: #f2f2f2;
     display: inline-flex;
-    margin-right: 20px;
-    margin-left: 20px;
+    justify-content: space-evenly;
+    width: 100%;
     margin-top: 40px;
     margin-bottom: 0px;
     height: 225px;
 }
 .footerList {
-    padding-left: 0px;
-    margin: auto;
-    margin-left: 20px;
     list-style: none;
     text-align: left;
     height: 180px;
+    width: 25%;
 }
 .listItem {
     margin-top: 20px;
-}
-
-@media screen and (min-width: 992px) {
-    body{
-       
-    }
-    
 }

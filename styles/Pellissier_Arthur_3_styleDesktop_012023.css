@@ -1,1 +1,11 @@
-﻿
+﻿@media screen and (min-width: 993px) {
+    header {
+        height: 100px;
+    }
+
+    .navText:hover {
+        color: #0065fc;
+        border-top-style: solid;
+        border-top-color: #0065fc;
+    }
+}

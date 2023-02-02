@@ -58,7 +58,7 @@
         margin: 0px;
     }
 
-    .navLink:focus {
+    .navTextHosting {
         border-color: #0065fc;
         color: #0065fc;
     }
@@ -67,7 +67,9 @@
     .search {
         width: 100%;
     }
-
+    .navLinkHosting:visited {
+        color: #0065fc;
+    }
     .searchAndFilter {
         background-color: white;
         border-radius: 0px 0px 0px 0px;
@@ -106,6 +108,8 @@
 
     .searchButtonIcon {
         margin: auto;
+        font-size: large;
+        font-weight: bold;
     }
 
     .textSearchButton {
@@ -132,13 +136,16 @@
         width: 37%;
         margin: auto;
         margin-top: 15px;
+
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
     }
 
     .logementsDispo {
         display: none;
     }
-    .logementsDispoMobile{
-
+    .logementsDispoMobile {
         display: inherit;
         width: 90%;
         margin: auto;
@@ -156,12 +163,9 @@
     .popular {
         height: auto;
         width: 100%;
-        min-width: none;
-        margin: none;
     }
     .sideCard {
         margin: 0px;
-        min-width: none;
     }
 
     .popularFlexBox {
@@ -228,10 +232,12 @@
     .activitiesFlexbox {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .clickCardActivities {
         width: 100%;
+        height: auto;
     }
 
     .activitiesPreview {
@@ -251,9 +257,14 @@
     .footerClass {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        justify-content: flex-start;
+
         padding-bottom: 30px;
         height: auto;
-        margin: 0px;
+    }
+
+    .footerList {
+        width: 80%;
+        height: auto;
     }
 }
